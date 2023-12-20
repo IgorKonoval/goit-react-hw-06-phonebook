@@ -1,6 +1,13 @@
+import { useDispatch } from 'react-redux';
 import { ListItem, Button } from './ListItem.styled';
+import { deleteContact } from '../../redux/ContactsSlice';
 
-const ContactItem = ({ id, name, number, onClick }) => {
+const ContactItem = ({ id, name, number }) => {
+  const dispatch = useDispatch();
+  const removeContact = contactId => {
+    dispatch(deleteContact(contactId));
+  };
+
   return (
     <ListItem>
       <p>
@@ -9,7 +16,7 @@ const ContactItem = ({ id, name, number, onClick }) => {
       <Button
         type="button"
         onClick={() => {
-          onClick(id);
+          removeContact(id);
         }}
       >
         Delete
