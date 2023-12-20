@@ -2,10 +2,9 @@ import { Formik } from 'formik';
 import * as Yup from 'yup';
 import toast from 'react-hot-toast';
 import { nanoid } from '@reduxjs/toolkit';
-import { Form, Field, FormGroup, ErrorMessage } from './Form.styled';
 import { useDispatch, useSelector } from 'react-redux';
+import { Form, Field, FormGroup, ErrorMessage } from './Form.styled';
 import { getContacts } from '../../redux/selectors';
-
 import { addContact } from '../../redux/ContactsSlice';
 
 const FormSchema = Yup.object().shape({

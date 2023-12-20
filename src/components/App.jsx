@@ -1,10 +1,10 @@
 import { Toaster } from 'react-hot-toast';
+import { useSelector } from 'react-redux';
 import ContactForm from './Form/Form';
 import { Container, Section, Title, SectionTitle, Message } from './App.styled';
 import { ContactList } from './ContactList/ContactList';
 import Filter from './Filter/Filter';
 import { GlobalStyle } from './GlobalStyle';
-import { useSelector } from 'react-redux';
 import { getContacts } from '../redux/selectors';
 
 export const App = () => {
