@@ -2,7 +2,7 @@
   "name": "react-homework-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://IgorKonoval.github.io/goit-react-hw-06-phonebooknpm/",
+  "homepage": "https://IgorKonoval.github.io/goit-react-hw-06-phonebook/",
   "dependencies": {
     "@reduxjs/toolkit": "^2.0.1",
     "@testing-library/jest-dom": "^5.16.3",
@@ -19,6 +19,7 @@
     "react-hot-toast": "^2.4.1",
     "react-redux": "^9.0.4",
     "react-scripts": "5.0.1",
+    "redux": "^5.0.0",
     "redux-persist": "^6.0.0",
     "styled-component": "^2.8.0",
     "styled-components": "^6.1.1",
