@@ -5,7 +5,7 @@ import { Container, Section, Title, SectionTitle, Message } from './App.styled';
 import { ContactList } from './ContactList/ContactList';
 import Filter from './Filter/Filter';
 import { GlobalStyle } from './GlobalStyle';
-import { getContacts } from 'redux/selectors';
+import { getContacts } from '../redux/selectors';
 
 export const App = () => {
   const contacts = useSelector(getContacts);
